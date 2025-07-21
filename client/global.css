@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme for foo-rum social platform
+   * Colors matched to the Figma design
+  */
+  :root {
+    --background: 240 20% 98%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    --primary: 228 100% 64%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 240 5% 96%;
+    --accent-foreground: 0 0% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 228 100% 64%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors for the foo-rum design */
+    --editor-bg: 0 0% 100%;
+    --editor-border: 240 6% 90%;
+    --post-bg: 0 0% 100%;
+    --avatar-bg: 240 5% 96%;
+    --text-light: 0 0% 60%;
+    --hover-bg: 240 10% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
