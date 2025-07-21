@@ -13,7 +13,7 @@ A modern social media platform built with React, featuring authentication, post 
 
 ## 🚀 Live Demo
 
-Visit the live application
+Visit the live application: https://atlys-code.netlify.app/
 
 ## 🛠️ Tech Stack
 
@@ -30,7 +30,7 @@ Visit the live application
 1. **Clone the repository:**
 
    ```bash
-   git clone [https://github.com/your-username/foo-rum.git](https://github.com/Himanshusinghofficial/atlys-code-himanshu.git)
+   git clone https://github.com/Himanshusinghofficial/atlys-code-himanshu.git
    cd foo-rum
    ```
 
