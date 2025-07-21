@@ -1,11 +1,9 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
-  // Set base path for GitHub Pages deployment
-  base: command === "build" ? "/foo-rum/" : "/",
+  base: "/",
   server: {
     host: "::",
     port: 8080,
@@ -13,7 +11,6 @@ export default defineConfig(({ command }) => ({
   build: {
     outDir: "dist/spa",
   },
-  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),
