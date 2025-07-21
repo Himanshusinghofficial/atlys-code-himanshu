@@ -46,48 +46,10 @@ Visit the live application: https://atlys-code.netlify.app/
    npm run dev
    ```
 
-4. **Open your browser:**
-   Navigate to `http://localhost:8080`
-
 ## 🏗️ Build
 
 ```bash
 npm run build
-```
-
-The built files will be in the `dist/spa` directory.
-
-## 🌐 Deployment to GitHub Pages
-
-This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
-
-### Setup Instructions:
-
-1. **Fork or clone this repository to your GitHub account**
-
-2. **Update the configuration:**
-
-   - In `package.json`, update the `homepage` URL to match your repository
-   - In `vite.config.ts`, the base path is already configured for GitHub Pages
-
-3. **Enable GitHub Pages:**
-
-   - Go to your repository settings
-   - Navigate to "Pages" section
-   - Set source to "GitHub Actions"
-
-4. **Deploy:**
-   - Push to the `main` branch
-   - GitHub Actions will automatically build and deploy your app
-   - Your site will be available at `https://your-username.github.io/foo-rum/`
-
-### Manual Deployment:
-
-If you prefer manual deployment:
-
-```bash
-npm run build
-# Then upload the contents of dist/spa to your web server
 ```
 
 ## 📝 Available Scripts
@@ -101,13 +63,12 @@ npm run build
 ## 🔧 Project Structure
 
 ```
-├── client/                 # React frontend source
-│   ├── components/        # React components
-│   ├── contexts/         # React contexts (auth)
-│   ├── pages/            # Route pages
-│   └── global.css        # TailwindCSS styles
-├── .github/workflows/    # GitHub Actions
-└── dist/spa/            # Built application (after build)
+$client/                 # React frontend source
+├── components/        # React components
+├── contexts/         # React contexts (auth)
+├── pages/            # Route pages
+└── global.css        # TailwindCSS styles
+
 ```
 
 ## 🎨 Customization
@@ -123,18 +84,3 @@ All components are in `client/components/` and built with TailwindCSS.
 ### Routing
 
 Add new routes in `client/App.tsx` using React Router.
-
-## 📄 License
-
-MIT License - see LICENSE file for details.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
----
-
-**Note**: This is a frontend-only application with client-side authentication for demo purposes. For production use, implement proper backend authentication and data persistence.
